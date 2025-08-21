@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Extension IITKGP Slides</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-    h2 { margin: 20px 0; }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      color: white;
-      background: #0366d6;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .btn:hover { background: #024f9d; }
-    iframe { border: none; width: 90%; height: 700px; }
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header { text-align:center; padding:16px 8px; }
+    .btns { text-align:center; margin: 8px 0 16px; }
+    .btn { display:inline-block; margin: 0 6px; padding: 8px 14px; background:#0366d6; color:#fff; text-decoration:none; border-radius:6px; }
+    .btn:hover { background:#024f9d; }
+    iframe { width:100%; height: 80vh; border:none; }
   </style>
 </head>
 <body>
-  <h2>Extension IITKGP Presentation</h2>
+  <header>
+    <h2>Extension IITKGP Presentation</h2>
+  </header>
 
-  <a href="Extension.pdf" class="btn" target="_blank">📖 View Fullscreen</a>
-  <a href="Extension.pdf" class="btn" download>⬇️ Download PDF</a>
+  <!-- View PPTX with animations -->
+  <iframe
+    src="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fkapil2020.github.io%2Fextension-iitkgp%2FExtension.pptx">
+  </iframe>
 
-  <iframe src="Extension.pdf"></iframe>
+  <div class="btns">
+    <a class="btn" href="Extension.pptx">⬇️ Download PPTX</a>
+    <a class="btn" href="Extension.pdf" target="_blank">📄 View PDF (fast)</a>
+  </div>
 </body>
 </html>
