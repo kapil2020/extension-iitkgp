@@ -3,10 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Extension IITKGP Slides</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+    h2 { margin: 20px 0; }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background: #0366d6;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover { background: #024f9d; }
+    iframe { border: none; width: 90%; height: 700px; }
+  </style>
 </head>
-<body style="margin:0; padding:0;">
-  <h2 style="text-align:center;">Extension IITKGP Presentation</h2>
-  <iframe src="Extension.pdf" width="100%" height="800px" style="border:none;">
-  </iframe>
+<body>
+  <h2>Extension IITKGP Presentation</h2>
+
+  <a href="Extension.pdf" class="btn" target="_blank">📖 View Fullscreen</a>
+  <a href="Extension.pdf" class="btn" download>⬇️ Download PDF</a>
+
+  <iframe src="Extension.pdf"></iframe>
 </body>
 </html>
